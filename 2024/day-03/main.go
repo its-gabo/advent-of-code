@@ -74,7 +74,5 @@ func parseInput(inputData string, regex string) (matchedSequences []string) {
 }
 
 func trimParentheses(str string) string {
-	withoutBrackets := strings.ReplaceAll(strings.ReplaceAll(str, "(", ""), ")", "")
-
-	return withoutBrackets
+	return strings.ReplaceAll(strings.ReplaceAll(str, "(", ""), ")", "")
 }
